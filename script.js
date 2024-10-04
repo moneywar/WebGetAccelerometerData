@@ -4,7 +4,7 @@ let accelDataElement = document.getElementById('accelData');
 
 // Function to establish WebSocket connection
 function connectWebSocket() {
-    socket = new WebSocket('ws://192.168.216.146:8080/game');  // Adjust this if your Unity server is on a different port or IP
+    socket = new WebSocket('ws://192.168.1.41:8080/game');  // Adjust this if your Unity server is on a different port or IP
 
     socket.onopen = function() {
         statusElement.textContent = 'WebSocket Connected';
